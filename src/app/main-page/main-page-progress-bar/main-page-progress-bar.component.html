@@ -1,0 +1,16 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div class="container">
+  <h3>Finished projects:</h3>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped " role="progressbar"
+         aria-valuenow="this.progress" aria-valuemin="0" aria-valuemax="100"
+         [ngStyle]="{'width': this.progress + '%'}">
+      <strong class = "procent">{{progress}}%</strong>
+    </div>
+  </div>
+</div>
+</body>

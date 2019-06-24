@@ -1,0 +1,121 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+p {
+  padding: 3px;
+}
+
+.project-tab {
+  padding-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text {
+  text-align: justify;
+}
+
+.link:hover {
+  cursor: pointer;
+  color: steelblue;
+}
+
+.nav-item:hover {
+  cursor: pointer;
+}
+
+.project-tab thead {
+  background: #f3f3f3;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+div.nav-tabs {
+  margin-top: 2%;
+  background-color: rgba(252, 206, 36, 0.5);
+  white-space: nowrap;
+  box-shadow: 2px 0 2px rgba(0, 0, 0, 0.1);
+}
+
+div.nav-tabs a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 23px;
+  text-decoration: none;
+}
+
+div.nav-tabs a:hover {
+  background-color: rgba(232, 186, 36, 0.4);
+}
+
+
+@media only screen and (max-width: 968px) {
+
+  tbody {
+    border-top: none !important;
+  }
+
+  .table-heading {
+    display: none;
+  }
+
+  .table-content {
+    display: block;
+    padding: .2rem 0;
+    border: none;
+  }
+
+  .table-row {
+    display: block;
+    border-bottom: 2px solid rgba(252, 206, 36, 1);
+  }
+
+  .table-content:before {
+    content: attr(data-heading);
+    display: inline-block;
+    width: 40%;
+    color: #999;
+    font-size: .75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .project-tab {
+    width: 98%;
+  }
+
+  div.nav-tabs {
+    overflow: auto;
+  }
+
+
+}
+
+@media only screen and (min-width: 969px) {
+  .project-tab {
+    width: auto;
+    max-width: 950px;
+  }
+
+  .tab-content {
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .tab {
+    width: 20%;
+  }
+
+  .tab-large {
+    width: 40%;
+  }
+
+}
+
+

@@ -1,0 +1,41 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<div class="container">
+  <div class="counter">
+    <app-main-page-progress-bar></app-main-page-progress-bar>
+  </div>
+  <div class="text">
+    <p><strong>"Do Good This Summer"</strong> is extraordinary initiative were you can give back to society, help
+      animals or share your
+      knowledge. This can make you a part of special
+      project were not only you will be helping, but we believe that your good jobs will bring back many great
+      emotions to you as well!
+    </p>
+  </div>
+  <div class="carousel">
+    <button
+      class="w3-button w3-display-left"
+      (click)="navigateFromCurrentSlide(-1)">
+      &#10094;
+    </button>
+    <img
+      class="carouselComponent image-style"
+      src="../../../assets/3photo.jpg"/>
+    <iframe
+      class="carouselComponent media-style-youtube-video"
+      src="https://www.youtube.com/embed/jLJwwzkG3EM"
+      frameborder="0">
+    </iframe>
+    <img
+      class="carouselComponent image-style"
+      src="../../../assets/1photo.jpg"
+    />
+    <button
+      class="w3-button w3-display-right"
+      (click)="navigateFromCurrentSlide(1)">
+      &#10095;
+    </button>
+  </div>
+</div>
+
